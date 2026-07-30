@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts (likeplum.com + successor studypool.com)
+notes: >-
+  likeplum.com still resolves and serves TLS, but 301-redirects all traffic to
+  www.studypool.com, the surviving property of the former Createpool network.
+  Both hosts are probed here.
+hosts:
+- host: likeplum.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jan 20 14:22:03 2027 GMT
+  hsts: false
+  redirects_to: https://www.studypool.com/
+- host: studypool.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  9 23:40:36 2026 GMT
+  hsts: false
+domains:
+- domain: likeplum.com
+  dnssec: false
+  caa: []
+  spf: true
+  spf_record: v=spf1 include:spf.protection.outlook.com -all
+  dmarc: false
+  dmarc_policy: null
+- domain: studypool.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
