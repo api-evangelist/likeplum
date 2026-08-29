@@ -22,6 +22,17 @@ description: >-
   profile is retained in the API Evangelist network as an identity record for a
   rebranded 500 Global portfolio company rather than as an API provider.
 url: https://raw.githubusercontent.com/api-evangelist/likeplum/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
